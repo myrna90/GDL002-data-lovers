@@ -1,8 +1,13 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 
-const example = () => {
-  return 'example';
-};
+/*const example = () => {
 
-window.example = example;
+    return 'example';
+};*/
+
+window.data = {
+    viewData: () => {
+        return window.POKEMON;
+    }
+}
