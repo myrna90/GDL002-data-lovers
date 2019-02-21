@@ -4083,4 +4083,4 @@ const POKEMON = {
             "Dark"
         ]
     }]
-};;
+};
