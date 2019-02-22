@@ -1,3 +1,4 @@
+//funcion que recupera la data y la muestra en pantalla principal
 const pokeData = POKEMON.pokemon;
 let list = [];
 for (let i = 0; i < pokeData.length; i++) {

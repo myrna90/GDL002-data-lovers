@@ -3,19 +3,44 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <div id="root"></div>
-    <!--pantalla principal-->
-    <section id="pokeList">
+    <header>
+        <img src="https://triplemonitorwallpaper.com/wp-content/uploads/2018/05/triple-screen-pokemon-wallpaper-4.jpg" class="imagen" />
+    </header>
+    <section class="seccionToggle">
+        <div class="wrap">
+            <h2>Tipo & Debilidad</h2>
+            <button>Volador</button>
+        </div>
     </section>
-    <!--pantalla vista pokemon-->
-    <section id="view">
 
-    </section>
+    <a href="#" id="btn-toggle" class="btn-toggle">BUSQUEDA AVANZADA</a>
+    <div id="header">
+        <ul class="nav">
+            <li><a href="">Ordenar</a>
+                <ul>
+                    <li><a href="">A-Z</a></li>
+                    <li><a href="">Z-A</a></li>
+                    <li><a href="">1-151</a></li>
+                    <li><a href="">151-1</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div id="pokeList" class="wrap">
+
+        </div>
+    </div>
+
+    <div id="root"></div>
     <script src="./data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>
