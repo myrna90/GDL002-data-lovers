@@ -8,6 +8,6 @@ const example = () => {
 const pokeData = window.POKEMON.pokemon;
 let list=[];
 for(let i = 0; i < pokeData.length; i++){
-  let pokeList = " <img src='"+pokeData[i].img+"'/>" + " " + pokeData[i].name + " " + pokeData[i].num;
+  let pokeList = "<div class='pokemonScreen'>"+" <img src='"+pokeData[i].img+"'/>" + "<br>" + pokeData[i].num + "<br> " + pokeData[i].name + "</div>" ;
   list += pokeList;
 }
