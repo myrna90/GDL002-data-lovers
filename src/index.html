@@ -38,9 +38,21 @@
             </section>
               <a href="#" id="btn-toggle" class="btn-toggle">BUSQUEDA AVANZADA</a>
               <div class="main">
-                <div id="pokeList" class="wrap">    
+                  <div id="header">
+                      <ul class="nav">
+                          <li><a href="">Ordenar</a>
+                              <ul>
+                                  <li id="btnUpward"><a href="">A-Z</a></li>
+                                  <li id="btnLess"><a href="">Z-A</a></li>
+                                  <li id="btnNumUp"><a href="">1-151</a></li>
+                                  <li id="btnNumLess"><a href="">151-1</a></li>
+                              </ul>
+                          </li>
+                      </ul>
                   </div>
-                </div>  
+                <div id="pokeList" class="wrap">    
+                </div>
+              </div>  
                <div id="root"></div>
                 <!-- <script src="./data/injuries/injuries.js"></script> -->
                 <script src="./data/pokemon/pokemon.js"></script>

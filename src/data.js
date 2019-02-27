@@ -13,6 +13,5 @@ for(let i = 0; i < pokeData.length; i++){
 };
 
 
-//let pokewater = pokeData.filter(function(el){
- // return (el.type == "Water");
-//});
+
+console.log(pokeData[i].num)
