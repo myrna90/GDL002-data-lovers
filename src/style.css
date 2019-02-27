@@ -4,23 +4,27 @@
     box-sizing: border-box; }
   
   body {
-    background:#98999B;
-    color: white;
-    font-family: 'Boogaloo', cursive;;
-   }
+    background-image:url(https://i.pinimg.com/originals/46/1d/25/461d254f8563f8945ce3a385f289df17.jpg);
+    color:  #0F58A2;
+    font-family: 'Francois One', sans-serif;
+  }
   img{
     width: 100%;
   }
   .pokemonScreen{
-    float:left;
-    display:flex;
-    width: 250px;
-   max-width: 300px;   
+   display:inline-block;
+   width: 200px;
+   max-width: 200px;
+   padding: 6px;
+   margin: 10px;
+   text-align: center;
+   background-color:  #EFF0F1;
+   border:none;
   }
   a {
-    color: white;
-    text-decoration: none; }
-    a:hover {
+   color: white;
+   text-decoration: none; }
+  a:hover {
       text-decoration: underline; }
   .imagen{
       width: 100%;
@@ -30,7 +34,7 @@
   }
 
   .wrap {
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: auto; }
   
@@ -40,26 +44,23 @@
   
   .seccionToggle {
     display: none;
-    height: calc(80vh - 50px);
+    height: calc(90vh - 50px);
     background: #fff;
     color: #001F3F;
-    padding: 50px 0;
+    padding: 40px 0;
     text-align: center; }
     .seccionToggle h2 {
-      font-size: 60px;
+      font-size: 50px;
       margin-top: 50px; }
     .seccionToggle p {
       font-size: 20px;
       margin-bottom: 50px; }
-    .seccionToggle button {
-      position: absolute;
-      width: 112px;
-      height: 32px;
-      left: 64px;
-      top: 341px;
-      background: linear-gradient(180deg, #1DA2DB 28.73%, rgba(255, 255, 255, 0) 100%), #7A7E7C;
-      border-radius: 4px;}
-
+  
+      .water{
+      border:none;
+      max-width: 70px;
+      max-height: 80px;} 
+        
   .btn-toggle {
     height: 50px;
     line-height: 50px;
