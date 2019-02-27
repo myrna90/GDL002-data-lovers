@@ -5,14 +5,4 @@ const example = () => {
   return 'example';
 };
 
-const pokeData = window.POKEMON.pokemon;
-let list=[];
-for(let i = 0; i < pokeData.length; i++){
-  let pokeList = "<div class='pokemonScreen'>"+" <img src='"+pokeData[i].img+"'/>" + "<br>" + pokeData[i].num + "<br> " + pokeData[i].name + "</div>" ;
-  list += pokeList;
-};
-
-
-//let pokewater = pokeData.filter(function(el){
- // return (el.type == "Water");
-//});
+window.example = example;
