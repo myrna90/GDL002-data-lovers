@@ -122,6 +122,21 @@ el problema (o problemas) que tiene tu usuario.
 
 ### Historias de usuario
 
+*Al cargarse la pigina el usuario puede visulizar una pantalla blanca la cual se describe de la siguiente forma:
+
+I.- En la parte superior se vizualiza una imagen con el nombre que se utilizo para la pagina.
+
+II.- Por debajo de esta imagen el usuario puede visualizar una barra deslizable con la palabra "busqueda avanzada", la cual al dar click se desliza y contiene 18 botones de busqueda por tipo de pokemon, al momento de elegir cualquier boton, este hara una funcion de filtrado y mostrara el tipo de pokemon que se haya elegido, esto se mostrara en la misma pagina principal.
+
+III.- Por debajo de la barra deslizable el usuario puede visualizar una barra la cual contiene las opciones para ordenar la lista de pokemon, esta barra contiene 4 opciones de orden:
+    I.- A-Z;
+    II.- Z-A;
+    III.- 1-151;
+    IV.- 151-1;
+Al momento de dar click en cualquier opcion hara una funcion de orden, segun el parametro que se elija, esto se mostrara en la misma panatalla principal.
+
+IV.- El usuario puede visualizar al cargar la pagina principal un listado de todos los pokemon que incluye la data, esto se muestra por debajo de la barra de ordenado.
+
 Una vez que entiendas las necesidades de tu usuario, escribe las [Historias
 de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
 todo lo que el usuario necesita hacer/ver. Asegúrate de incluir una definición

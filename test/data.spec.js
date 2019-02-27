@@ -1,12 +1,12 @@
 require('../src/data.js');
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
+describe('POKEMON', () => {
+    it('is a metodo', () => {
+        expect(typeof POKEMON).toBe('metodo');
+    });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
+    it('returns `POKEMON`', () => {
+        expect(metodo()).toBe('POKEMON');
+    });
 });
