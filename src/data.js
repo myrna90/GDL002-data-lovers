@@ -13,5 +13,11 @@ for(let i = 0; i < pokeData.length; i++){
 };
 
 
-
-console.log(pokeData[i].num)
+function filterType(PokeData, condition) {
+   pokeData;
+   const filterCond = pokeData.filter(pokemon => (pokemon.type[0] == condition || pokemon.type[1] == condition));
+   filterCond.forEach(element => {
+      console.log(element.name, element.type) 
+      document.getElementById("pokeList").innerHTML += " "+  element.name + " " + element.type + " /";
+   });
+}
