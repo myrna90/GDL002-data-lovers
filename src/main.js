@@ -1,4 +1,5 @@
 
+
 document.getElementById("pokeList").innerHTML= list;
 
 $(document).ready(function(){
@@ -26,5 +27,6 @@ document.getElementById("fighting-button").addEventListener("click", function() 
 document.getElementById("poison-button").addEventListener("click", function() { filterType(pokeData, "Poison"); });
 document.getElementById("bug-button").addEventListener("click", function() { filterType(pokeData, "Bug"); });
 document.getElementById("flying-button").addEventListener("click", function() { filterType(pokeData, "Flying"); });
+
 
 

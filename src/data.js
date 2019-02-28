@@ -21,3 +21,4 @@ function filterType(PokeData, condition) {
       document.getElementById("pokeList").innerHTML += " "+  element.name + " " + element.type + " /";
    });
 }
+
