@@ -1,12 +1,12 @@
 require('../src/data.js');
 
 
-describe('POKEMON', () => {
-    it('is a metodo', () => {
-        expect(typeof POKEMON).toBe('metodo');
-    });
+var pokemon = pokemon.filter(function(el) {
+    'strict mode'
+    return el
+})
 
-    it('returns `POKEMON`', () => {
-        expect(metodo()).toBe('POKEMON');
-    });
-});
+var pokemon = pokemon.sort(function(el) {
+    'strict mode'
+    return el
+})

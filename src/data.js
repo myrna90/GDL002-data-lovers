@@ -6,8 +6,13 @@ for (let i = 0; i < pokeData.length; i++) {
     list += pokeList;
 }
 
-
-let pokeGrass = pokeData.filter(function(el) {
-    return (el.type[0] == "Flying" || el.type[1] == "Flying");
-});
-console.log(pokeGrass)
+//funcion para filtrar por tipo
+function filterType(PokeData, condition) {
+    pokeData;
+    const filterCond = pokeData.filter(pokemon => (pokemon.type[0] == condition || pokemon.type[1] == condition));
+    filterCond.forEach(element => {
+        console.log(element.name, element.type)
+    });
+}
+//funcion para ordenar a-z
+console.log(pokeData.sort(a, b)(pokeData.name - pokeData.name))
