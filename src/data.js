@@ -1,42 +1,70 @@
-//funcion que recupera la data y la muestra en pantalla principal
 const pokeData = POKEMON.pokemon;
 let list = [];
 for (let i = 0; i < pokeData.length; i++) {
-    let pokeList = " <img src='" + pokeData[i].img + "'/>" + " " + pokeData[i].name + " " + pokeData[i].num;
+    let pokeList = "<div class='pokemonScreen'>" + " <img src='" + pokeData[i].img + "'/>" + "<br>" + pokeData[i].num + "<br> " + pokeData[i].name + "</div>";
     list += pokeList;
 }
 
-<<<<<<< HEAD
-//funcion para filtrar por tipo
-function filterType(PokeData, condition) {
-    pokeData;
-    const filterCond = pokeData.filter(pokemon => (pokemon.type[0] == condition || pokemon.type[1] == condition));
-    filterCond.forEach(element => {
-        console.log(element.name, element.type)
+function viewPokemon(pokemon) {
+    document.getElementById("pokeList").innerHTML = "";
+    pokemon.forEach(element => {
+        console.log(element.name, element.type);
+        document.getElementById("pokeList").innerHTML += "<div id= 'listFil' class ='pokemonScreen'>" + "<img src = '" + element.img + "' />" + " " + element.name + " " + element.num + "</div>";
+
     });
 }
-//funcion para ordenar a-z
-console.log(pokeData.sort(a, b)(pokeData.name - pokeData.name))
-=======
-const example = () => {
-  return 'example';
-};
-
-const pokeData = window.POKEMON.pokemon;
-let list=[];
-for(let i = 0; i < pokeData.length; i++){
-  let pokeList = "<div class='pokemonScreen'>"+" <img src='"+pokeData[i].img+"'/>" + "<br>" + pokeData[i].num + "<br> " + pokeData[i].name + "</div>" ;
-  list += pokeList;
-};
 
 
-function filterType(PokeData, condition) {
-   pokeData;
-   const filterCond = pokeData.filter(pokemon => (pokemon.type[0] == condition || pokemon.type[1] == condition));
-   filterCond.forEach(element => {
-      console.log(element.name, element.type) 
-      document.getElementById("pokeList").innerHTML += " "+  element.name + " " + element.type + " /";
-   });
+function filterType(condition) {
+    const filterCond = pokeData.filter(pokemon => (pokemon.type[0] == condition || pokemon.type[1] == condition));
+    viewPokemon(filterCond);
 }
 
->>>>>>> 97942abe31a0bb5260d39f93f91910926f9d7710
+function filterTypeCount(condition) {
+    return filterCond = pokeData.filter(pokemon => (pokemon.type[0] == condition || pokemon.type[1] == condition)).length;
+
+}
+
+function orderAZ() {
+    let cambio;
+    let pokeD = pokeData;
+    for (let y = 0; y < pokeD.length; y++) {
+        for (let i = y + 1; i < pokeD.length; i++) {
+            if (pokeD[y].name > pokeD[i].name) {
+                cambio = pokeD[y];
+                pokeD[y] = pokeD[i];
+                pokeD[i] = cambio;
+            }
+        }
+    }
+    viewPokemon(pokeD);
+}
+
+function orderZA() {
+
+    let cambio;
+    let pokeD = pokeData;
+    for (let y = 0; y < pokeD.length; y++) {
+        for (let i = y + 1; i < pokeD.length; i++) {
+            if (pokeD[y].name < pokeD[i].name) {
+                cambio = pokeD[y];
+                pokeD[y] = pokeD[i];
+                pokeD[i] = cambio;
+            }
+        }
+    }
+    viewPokemon(pokeD);
+}
+
+function porcentajePorTipo() {
+    let tipos = ["Water", "Fire", "Grass", "Ground", "Rock", "Steel", "Ice", "Electric", "Dragon", "Ghost", "Psychic", "Normal", "Fighting", "Poison", "Bug", "Flying"];
+
+    let total = 151;
+    let cantidad = 0;
+    tipos.forEach(element => {
+        cantidad = filterTypeCount(element);
+        porncentaje = total / cantidad;
+        porncentaje = 100 / porncentaje;
+        alert("tipo: " + element + " porcentaje: " + porncentaje + "%");
+    });
+}

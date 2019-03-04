@@ -1,12 +1,13 @@
-require('../src/data.js');
+const POKEMON = require('../src/data/pokemon/pokemon.json');
 
 
-var pokemon = pokemon.filter(function(el) {
-    'strict mode'
-    return el
-})
 
-var pokemon = pokemon.sort(function(el) {
-    'strict mode'
-    return el
-})
+describe('example', () => {
+    it('is a function', () => {
+        expect(typeof example).toBe('function');
+    });
+
+    it('returns `example`', () => {
+        expect(example()).toBe('example');
+    });
+});
