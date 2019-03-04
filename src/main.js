@@ -7,16 +7,12 @@ function toTop() {
 function home() {
     location.reload();
 }
-
 $(document).ready(function() {
     var estado = false;
-
     $('#btn-toggle').on('click', function() {
         $('.seccionToggle').slideToggle();
-
     });
 });
-
 document.getElementById("water-button").addEventListener("click", function() { filterType("Water"); });
 document.getElementById("fire-button").addEventListener("click", function() { filterType("Fire"); });
 document.getElementById("grass-button").addEventListener("click", function() { filterType("Grass"); });

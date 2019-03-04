@@ -67,4 +67,4 @@ function porcentajePorTipo() {
         porncentaje = 100 / porncentaje;
         alert("tipo: " + element + " porcentaje: " + porncentaje + "%");
     });
-}
+};
