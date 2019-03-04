@@ -29,7 +29,7 @@ II.- En la parte superior se visualiza una imagen con el nombre que se utilizó 
 
 III.- Por debajo de esta imagen el usuario puede visualizar una barra deslizable con la palabra "búsqueda avanzada", la cual al dar click se desliza y contiene 16 botones de búsqueda por tipo de pokemon, al momento de elegir cualquier botón, este hará una función de filtrado y mostrará el tipo de pokemon que se haya elegido, esto se mostrará en la misma página principal.
 
-IV.- Por debajo de la barra deslizable el usuario puede visualizar una barra la cual contiene las opciones para ordenar la lista de pokemon, esta barra contiene 4 opciones de orden: I.- A-Z; II.- Z-A; Al momento de dar click en cualquier opción hará una función de orden, según el parámetro que se elija, esto se mostrará en la misma pantalla principal.
+IV.- Por debajo de la barra deslizable el usuario puede visualizar una barra la cual contiene las opciones para ordenar la lista de pokemon, esta barra contiene 2 opciones de orden: I.- A-Z; II.- Z-A; Al momento de dar click en cualquier opción hará una función de orden, según el parámetro que se elija, esto se mostrará en la misma pantalla principal.
 
 D.O.D. 
 I.- La página principal está terminada cuando el usuario puede visualizar en la pantalla toda la lista de pokemon, los 151 pokemon que incluye la data, y dentro de esta página principal puede visualizar una barra de búsqueda avanzad y otra barra para poder hacer una función de ordenamiento.
