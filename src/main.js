@@ -17,7 +17,7 @@ $(document).ready(function() {
     });
 });
 
-document.getElementById("water-button").addEventListener("click", function() { filterType("Water"); });
+document.getElementById("water-button").addEventListener("click", filterType("Water"));
 document.getElementById("fire-button").addEventListener("click", function() { filterType("Fire"); });
 document.getElementById("grass-button").addEventListener("click", function() { filterType("Grass"); });
 document.getElementById("ground-button").addEventListener("click", function() { filterType("Ground"); });
