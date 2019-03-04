@@ -1,8 +1,8 @@
 document.getElementById("pokeList").innerHTML = list;
 
 function toTop() {
-    window.scrollTo(0, 0)
-};
+    window.scrollTo(0, 0);
+}
 
 function home() {
     location.reload();
