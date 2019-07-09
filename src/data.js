@@ -1,9 +1,11 @@
 const pokeData = POKEMON.pokemon;
 let list = [];
-for (let i = 0; i < pokeData.length; i++) {
-    let pokeList = "<div class='pokemonScreen'>" + " <img src='" + pokeData[i].img + "'/>" + "<br>" + pokeData[i].num + "<br> " + pokeData[i].name + "</div>";
+pokeData.forEach(element => {
+    let pokeList =
+      "<div class='pokemonScreen'>" + " <img src='" + element.img + "'/>" +
+      "<br>" + element.num + "<br> " + element.name + "</div>";
     list += pokeList;
-}
+  });
 
 function viewPokemon(pokemon) {
     document.getElementById("pokeList").innerHTML = "";
@@ -26,37 +28,32 @@ function filterTypeCount(condition) {
 }
 
 function orderAZ() {
-    let cambio;
-    let pokeD = pokeData;
-    for (let y = 0; y < pokeD.length; y++) {
-        for (let i = y + 1; i < pokeD.length; i++) {
-            if (pokeD[y].name > pokeD[i].name) {
-                cambio = pokeD[y];
-                pokeD[y] = pokeD[i];
-                pokeD[i] = cambio;
-            }
+    let pokeD = pokeData.sort(function(a, b) {
+        if (a.name < b.name) {
+          return -1;
         }
+        if (a.name > b.name) {
+          return 1;
+        }
+      });
+    
+      viewPokemon(pokeD);
     }
-    viewPokemon(pokeD);
-}
 
 function orderZA() {
 
-    let cambio;
-    let pokeD = pokeData;
-    for (let y = 0; y < pokeD.length; y++) {
-        for (let i = y + 1; i < pokeD.length; i++) {
-            if (pokeD[y].name < pokeD[i].name) {
-                cambio = pokeD[y];
-                pokeD[y] = pokeD[i];
-                pokeD[i] = cambio;
-            }
+    let pokeD = pokeData.sort(function(a, b) {
+        if (a.name > b.name) {
+          return -1;
         }
+        if (a.name < b.name) {
+          return 1;
+        }
+      });
+      viewPokemon(pokeD);
     }
-    viewPokemon(pokeD);
-}
 
-function porcentajePorTipo() {
+/*function porcentajePorTipo() {
     let tipos = ["Water", "Fire", "Grass", "Ground", "Rock", "Steel", "Ice", "Electric", "Dragon", "Ghost", "Psychic", "Normal", "Fighting", "Poison", "Bug", "Flying"];
 
     let total = 151;
@@ -67,4 +64,4 @@ function porcentajePorTipo() {
         porncentaje = 100 / porncentaje;
         alert("tipo: " + element + " porcentaje: " + porncentaje + "%");
     });
-};
+};*/

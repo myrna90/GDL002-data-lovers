@@ -13,6 +13,28 @@ $(document).ready(function() {
         $('.seccionToggle').slideToggle();
     });
 });
+
+$(document).ready(main);
+
+var contador = 1;
+
+function main() {
+  $(".menu_bar").click(function() {
+    // $('nav').toggle();
+
+    if (contador == 1) {
+      $("nav").animate({
+        left: "0"
+      });
+      contador = 0;
+    } else {
+      contador = 1;
+      $("nav").animate({
+        left: "-100%"
+      });
+    }
+  });
+}; 
 document.getElementById("water-button").addEventListener("click", function() { filterType("Water"); });
 document.getElementById("fire-button").addEventListener("click", function() { filterType("Fire"); });
 document.getElementById("grass-button").addEventListener("click", function() { filterType("Grass"); });
@@ -33,4 +55,4 @@ document.getElementById("flying-button").addEventListener("click", function() { 
 document.getElementById("btnUpward").addEventListener("click", orderAZ);
 document.getElementById("btnLess").addEventListener("click", orderZA);
 
-document.getElementById("estadist").addEventListener("click", function() { porcentajePorTipo(); });
+//document.getElementById("estadist").addEventListener("click", function() { porcentajePorTipo(); });
