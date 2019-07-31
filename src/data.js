@@ -20,8 +20,6 @@ function viewPokemon(pokemon) {
 function filterType(condition) {
     const filterCond = pokeData.filter(pokemon => (pokemon.type[0] == condition || pokemon.type[1] == condition));
     viewPokemon(filterCond);
-    orderAZ();
-    orderZA();
 }
 
 function filterTypeCount(condition) {
